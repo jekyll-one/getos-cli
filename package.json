@@ -1,0 +1,47 @@
+{
+  "name": "getos-cli",
+  "version": "1.0.0",
+  "description": "Detect and Print OS name cross-platform",
+  "homepage": "https://jekyll-one.com",
+  "author": {
+    "name": "Juergen Adams",
+    "email": "jadams@jekyll-one.com",
+    "url": "https://jekyll-one.com"
+  },
+  "license": "MIT",
+  "repository": "jekyll-one/getos-cli",
+  "keywords": [
+    "OS",
+    "cross-platform",
+    "name",
+    "npm",
+    "script",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bin": {
+    "getos": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo Detecting OS .. && cross-env cross-var if-env OS=Windows_NT && cross-var echo OS detected as: $OS && echo OS-Name: && cross-var node $npm_package_bin_getos || OS=$(echo \"$(./index.js)\") && echo OS detected as: $OS",
+    "clean": "run-p -s clean:*",
+    "clean:start": "echo Cleaning up Project root files ..",
+    "clean:logs": "shx rm -f *.log",
+    "clean:locks": "shx rm -f *.lock && shx rm -f package-lock.json",
+    "clean:nyc": "rimraf .nyc_output/ coverage/",
+    "coverage-html": "nyc ava && nyc report --reporter=html"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "cross-var": "^1.1.0",
+    "getos": "^3.1.0",
+    "if-env": "^1.0.4",
+    "npm-run-all": "^4.1.3"
+  },
+  "devDependencies": {}
+}
