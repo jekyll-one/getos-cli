@@ -18,4 +18,4 @@ TBD
 
 ## License
 
-MIT © [Michael Mayer](http://schnittstabil.de)
+MIT © 2018 [Juergen Adams](https://github.com/jekyll-one/getos-cli)
