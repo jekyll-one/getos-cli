@@ -1,6 +1,6 @@
 {
   "name": "getos-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect and Print OS name cross-platform",
   "homepage": "https://jekyll-one.com",
   "author": {
