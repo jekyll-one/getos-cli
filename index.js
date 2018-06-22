@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-/**
- * @author Juergen Adams
- * @copyright 2018 Juergen Adams MIT
- */
 "use strict"
 
 //------------------------------------------------------------------------------
